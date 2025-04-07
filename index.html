@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,4 +47,200 @@
     </footer>
 
 </body>
+=======
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .required {
+            color: red;
+        }
+
+        /* Add styles for the ordered list */
+        ol {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List (Roman Numerals)</h2>
+        <ol type="I">
+            <li>Introduction to HTML5</li>
+            <li>Adding Multimedia</li>
+            <li>HTML5 Forms and Inputs</li>
+            <li>Validation and Accessibility</li>
+            <li>Conclusion</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>HTML5 Image</h2>
+        <img src="https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg" alt="Scenic Nature">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Elm Street, Springfield</td>
+                    <td>(555) 123-4567</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Avenue, Shelbyville</td>
+                    <td>(555) 234-5678</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Robert Brown</td>
+                    <td>789 Pine Road, Capital City</td>
+                    <td>(555) 345-6789</td>
+                    <td>robertbrown@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>101 Maple Street, Springfield</td>
+                    <td>(555) 456-7890</td>
+                    <td>emilydavis@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Clark</td>
+                    <td>202 Birch Drive, Shelbyville</td>
+                    <td>(555) 567-8901</td>
+                    <td>michaelclark@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <!-- Email -->
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Password -->
+            <label for="password">Password <span class="required">*</span></label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <!-- Date -->
+            <label for="dob">Date of Birth <span class="required">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Gender Dropdown -->
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Membership Type Radio Buttons -->
+            <label for="membership">Membership Type</label><br>
+            <input type="radio" id="basic" name="membership" value="basic" required>
+            <label for="basic">Basic</label>
+            <input type="radio" id="premium" name="membership" value="premium" required>
+            <label for="premium">Premium</label>
+
+            <!-- Terms and Conditions Checkbox -->
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the Terms and Conditions
+            </label>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+
+>>>>>>> c5a1618 (Add initial files)
 </html>
